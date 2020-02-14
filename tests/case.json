@@ -1,0 +1,40 @@
+[
+    {
+        "config": {
+            "name": "test",
+            "parameters": [],
+            "variables": [],
+            "request": {
+                "base_url": "http://127.0.0.1:5000",
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            },
+            "output": []
+        }
+    },
+    {
+        "test": {
+            "name": "user view",
+            "request": {
+                "url": "/user/info",
+                "method": "GET",
+                "headers": {},
+                "json": {},
+                "params": {}
+            },
+            "variables": [],
+            "extract": [],
+            "validate": [
+                {
+                    "eq": [
+                        "content.status",
+                        "ok"
+                    ]
+                }
+            ],
+            "setup_hooks": [],
+            "teardown_hooks": []
+        }
+    }
+]

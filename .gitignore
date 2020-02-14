@@ -1,0 +1,15 @@
+#ide相关
+/.idea/
+/.vscode/
+#打包相关的临时文件
+/dist/
+/package/*.tar.gz
+/package/main.py
+/package/pip.conf
+/package/requirements.txt
+#version总是build的时候生成的
+version.py
+#一些临时文件
+*.pyc
+.version
+node_modules
