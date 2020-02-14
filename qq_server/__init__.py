@@ -18,4 +18,7 @@ init_model()
 # app router
 with app.app_context():
     from .views import user_view
-    app.register_blueprint(user_view, url_prefix="/user")
+    app.register_blueprint(user_view, url_prefix="/cxm/user")
+
+    from .views import login_view
+    app.register_blueprint(login_view, url_prefix="/cxm/")
